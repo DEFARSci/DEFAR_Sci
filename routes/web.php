@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\EntretienController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,3 +18,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+	//Route Entretien
+
+Route::get('/entretiens', [EntretienController::class, 'index']);
+
+Route::get('entretiens/create',[EntretiensController::class,'create'] );
