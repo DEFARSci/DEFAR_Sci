@@ -39,4 +39,7 @@ class Entretien extends Model
 
 
     ];
+
+
+    protected $dates = ['date_debut','date_fin','heure_d_arriver', 'heure_petit_dejeuner','heure_pause'];
 }

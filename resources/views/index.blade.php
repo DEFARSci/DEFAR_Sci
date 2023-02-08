@@ -35,26 +35,6 @@
       <th scope="row">{{ $entretien->id }}</th>
       <td>{{ $entretien->nom}}</td>
       <td>{{ $entretien->prenom}}</td>
-      <td>{{ $entretien->email }}</td>
-      <td>{{ $entretien->telephone }}</td>
-      <td>{{ $entretien->adresse}}</td>
-      <td>{{ $entretien->date_debut}}</td>
-      <td>{{ $entretien-> date_fin}}</td>
-      <td>{{ $entretien->participant }}</td>
-      <td>{{ $entretien->connaissez_vous_defarcsi}}</td>
-      <td>{{ $entretien->comment_voyez_vous_defarsci}}</td>
-      <td>{{ $entretien->presentation }}</td>
-      <td>{{ $entretien->qu_enttendez_de_defarsci }}</td>
-      <td>{{ $entretien->atouts}}</td>
-      <td>{{ $entretien->faiblesses}}</td>
-      <td>{{ $entretien-> maladie_ou_allergie}}</td>
-      <td>{{ $entretien->objectifs_dans_2ans }}</td>
-      <td>{{ $entretien->mois_de_formation}}</td>
-      <td>{{ $entretien->demarrage}}</td>
-      <td>{{ $entretien->heure_d_arrive }}</td>
-      <td>{{ $entretien->heure_petit_dejeuner }}</td>
-      <td>{{ $entretien->heure_pause}}</td>
-      <td>{{ $entretien->modalite_paiement}}</td>
       
       
         <td>
@@ -74,13 +54,14 @@
 
             
 
-
             <td>
                 <form action="{{ route('delete_entretien', $entretien->id)}}" method="post">
-
-                 <a class="btn btn-primary" href="{{ route('delete_entretien', $entretien->id)}}">Delete</a>
+                  @csrf
+                  @method('DELETE')
+                  <button class="btn btn-danger" type="submit">Delete</button>
                 </form>
             </td>
+           
            
     </tr>
 

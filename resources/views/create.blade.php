@@ -36,16 +36,16 @@
 
 <div class="form-group>
     <label for="name" >Adresse: </label>
-    <input type="text" class="form-control" name="adresse" />
+    <input type="text" class="form-control" name="addresse" />
 </div> 
 
 <div class="form-group>
     <label for="name" >Date_debut </label>
-    <input type="text" class="form-control" name="date" />
+    <input type="date" class="form-control" name="date_debut" />
 </div> 
 <div class="form-group>
     <label for="name" >Date_fin: </label>
-    <input type="text" class="form-control" name="date" />
+    <input type="date" class="form-control" name="date_fin" />
 </div> 
 
 <div class="form-group>
@@ -54,66 +54,82 @@
 </div> 
 <div class="form-group>
     <label for="name" >Connaissez_vous_defarcsi: </label>
-    <input type="text" class="form-control" name="name" />
+    <input type="text" class="form-control" name="defarcsi" />
 </div> 
 
 <div class="form-group>
     <label for="name" >Comment_voyez_vous_defarsci: </label>
-    <input type="text" class="form-control" name="name" />
+    <input type="text" class="form-control" name="comment_voyez_vous_defarsci" />
 </div> 
 <div class="form-group>
     <label for="name" >Presentation: </label>
-    <input type="text" class="form-control" name="name" />
+    <input type="text" class="form-control" name="presentation" />
 </div> 
 
 <div class="form-group>
     <label for="name" >Qu_enttendez_de_defarsci: </label>
-    <input type="text" class="form-control" name="name" />
+    <input type="text" class="form-control" name="qu_enttendez_de_defarsci" />
 </div> 
 <div class="form-group>
     <label for="name" >Atouts: </label>
     <input type="text" class="form-control" name="atouts" />
 </div> 
 
-<div class="form-group>
+<div class="form-group">
     <label for="name" >Faiblesses: </label>
-    <input type="text" class="form-control" name="faiblesse" />
+    <input type="text" class="form-control" name="faiblesses" />
 </div> 
-<div class="form-group>
-    <label for="name" >Maladie_ou_Allergie: </label>
-    <input type="text" class="form-control" name="name" />
-</div> 
+
+<fieldset class="form-group">
+    <div class="row">
+        <label for="name"> </label>
+     <input type="text" class="form-control" name="maladie_ou_allergie" />
+      <legend class="form-group">Maladie_ou_allergie</legend>
+      <div class="col-sm-10">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="oui" checked>
+          <label class="form-check-label" for="gridRadios1">
+            oui
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="non">
+          <label class="form-check-label" for="gridRadios2">
+           non
+          </label>
+        </div>
+  </fieldset>
 
 <div class="form-group>
     <label for="name" >objectifs_dans_2ans: </label>
-    <input type="text" class="form-control" name="name" />
+    <input type="text" class="form-control" name="objectifs_dans_2ans" />
 </div> 
 <div class="form-group>
     <label for="name" >mois_de_formation: </label>
-    <input type="text" class="form-control" name="name" />
+    <input type="text" class="form-control" name="mois_de_formation" />
 </div> 
 
 <div class="form-group>
     <label for="name" >demarrage: </label>
-    <input type="text" class="form-control" name="description" />
+    <input type="date" class="form-control" name="demarrage" />
 </div> 
 <div class="form-group>
     <label for="name" >heure_d_arriver: </label>
-    <input type="text" class="form-control" name="year" />
+    <input type="time" class="form-control" name="heure_d_arriver" />
 </div> 
 
 <div class="form-group>
     <label for="name" >heure_petit_dejeuner: </label>
-    <input type="text" class="form-control" name="description" />
+    <input type="time" class="form-control" name="heure_petit_dejeuner" />
 </div> 
 <div class="form-group>
     <label for="name" >heure_pause: </label>
-    <input type="text" class="form-control" name="year" />
+    <input type="time" class="form-control" name="heure_pause" />
 </div> 
 
 <div class="form-group>
     <label for="name" >modalite_paiement: </label>
-    <input type="text" class="form-control" name="description" />
+    <input type="text" class="form-control" name="modalite_paiement" />
 </div> 
 
 

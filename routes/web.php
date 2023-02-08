@@ -24,4 +24,16 @@ Route::get('/', function () {
 
 Route::get('/entretiens', [EntretienController::class, 'index']);
 
-Route::get('entretiens/create',[EntretiensController::class,'create'] );
+Route::get('entretiens/create',[EntretienController::class,'create'] );
+
+Route::post('/entretiens',[EntretienController::class, 'store' ] )->name('create');
+
+Route::get('entretiens/profile/{id}', [EntretienController::class,'show'])->name('show');
+
+Route::get('entretients/{id}', [EntretienController::class, 'edit'])->name('edit_entretien');
+
+Route::put('entretiens/{id}', [EntretienController::class, 'update'])->name('entretiens.update');
+
+
+Route::delete('entretiens/{id}', [EntretienController::class, 'destroy'])->name('delete_entretien');
+
