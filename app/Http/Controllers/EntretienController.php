@@ -45,7 +45,7 @@ class EntretienController extends Controller
      */
     public function show($id)
     {
-        //
+        //d
     }
 
     /**
