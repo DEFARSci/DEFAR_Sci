@@ -9,7 +9,11 @@ class Entretien extends Model
 {
     use HasFactory;
 
+<<<<<<< HEAD
     protected $fillable = [
+=======
+    protected $filable = [
+>>>>>>> backend
 
     	'nom',
     	'prenom',
@@ -39,4 +43,10 @@ class Entretien extends Model
 
 
     ];
+<<<<<<< HEAD
+=======
+
+
+    protected $dates = ['date_debut','date_fin','heure_d_arriver', 'heure_petit_dejeuner','heure_pause'];
+>>>>>>> backend
 }

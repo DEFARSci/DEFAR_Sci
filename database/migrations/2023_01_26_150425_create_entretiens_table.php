@@ -33,10 +33,17 @@ class CreateEntretiensTable extends Migration
             $table->string('objectifs_dans_2ans');
             $table->string('mois_de_formation');
             $table->string('demarrage');
+<<<<<<< HEAD
             $table->date('heure_d_arriver');
             $table->date('heure_petit_dejeuner');
             $table->date('heure_pause');
             $table->prix('modalite_paiement');
+=======
+            $table->time('heure_d_arriver');
+            $table->time('heure_petit_dejeuner');
+            $table->time('heure_pause');
+            $table->string('modalite_paiement');
+>>>>>>> backend
             $table->timestamps();
         });
     }
