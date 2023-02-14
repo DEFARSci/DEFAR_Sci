@@ -9,7 +9,7 @@ class Entretien extends Model
 {
     use HasFactory;
 
-    protected $filable = [
+    protected $fillable = [
 
     	'nom',
     	'prenom',
@@ -38,5 +38,5 @@ class Entretien extends Model
 
 
 
-    ]
+    ];
 }
